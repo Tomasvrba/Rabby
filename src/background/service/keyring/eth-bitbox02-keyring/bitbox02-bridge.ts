@@ -87,7 +87,7 @@ export default class BitBox02Bridge implements BitBox02BridgeInterface {
     }
 
     const data: bitbox.Eth1559Transaction = {
-      chainId: Number(tx.chainId),
+      chainId: 1,
       nonce: toBytes(tx.nonce),
       maxPriorityFeePerGas: toBytes(tx.maxPriorityFeePerGas),
       maxFeePerGas: toBytes(tx.maxFeePerGas),
