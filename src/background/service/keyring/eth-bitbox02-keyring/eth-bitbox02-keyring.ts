@@ -196,7 +196,7 @@ class BitBox02Keyring extends EventEmitter {
       tx instanceof AccessListEIP2930Transaction
     ) {
       result = await this.bridge.ethSignTransaction(
-        Number(tx.common.chainId()),
+        1,
         this._pathFromAddress(address),
         tx.toJSON()
       );
